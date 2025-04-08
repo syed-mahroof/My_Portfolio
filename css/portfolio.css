@@ -113,7 +113,9 @@
     box-shadow: 0 0 10px rgba(248, 111, 111, 0.3);
     
   }
-  
+  .nav a {
+    text-decoration: none;
+  }
   #symbol:hover {
     transform: rotate(360deg);
     transition: transform 0.7s ease;
@@ -664,6 +666,7 @@
       box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
       z-index: 999;
     }
+
     
     .navbar.active {
       right: 0;
@@ -720,6 +723,9 @@
     .cphoto, .cform {
       width: 100%;
       max-width: 500px;
+    }
+    .cphoto {
+      display: none; /* Hide the contact image on mobile devices */
     }
   }
   
@@ -818,5 +824,9 @@
     .cphoto {
       height: 300px;
     }
+
+    
   }
+  
+
   
